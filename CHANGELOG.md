@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add npm package `open-props`.
 - Add the navigation bar component.
 
+### Changed
+- update the style of `App.vue`.
+
 ## [0.0.1] - 2022-05-19
 ### Added
 - Add prototype.
