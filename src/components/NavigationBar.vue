@@ -1,20 +1,33 @@
+<script setup lang="ts">
+import { GridIcon, HomeIcon, Link2Icon, UserIcon } from '@vue-icons/feather'
+</script>
+
 <template>
   <nav>
     <ul>
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/about">About</router-link></li>
-      <li><router-link to="/apps">Apps</router-link></li>
-      <li><router-link to="/links">Links</router-link></li>
+      <li><router-link :class="{ 'current-path': this.$route.path === '/' }" to="/">Home <HomeIcon /></router-link></li>
+      <li><router-link :class="{ 'current-path': this.$route.path === '/about' }" to="/about">About <UserIcon /></router-link></li>
+      <li><router-link :class="{ 'current-path': this.$route.path === '/apps' }" to="/apps">Apps <GridIcon /></router-link></li>
+      <li><router-link :class="{ 'current-path': this.$route.path === '/links' }" to="/links">Links <Link2Icon /></router-link></li>
     </ul>
   </nav>
 </template>
 
 <style scoped>
+/* router-link */
 a {
+  color: inherit;
+  display: flex;
+  gap: var(--size-1);
   margin-block: 0;
   margin-inline: 0;
   padding-block: 0;
   padding-inline: 0;
+}
+
+/* router-link:hover */
+a:hover {
+  text-decoration: none;
 }
 
 li, ul {
