@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Add npm package `open-props`.
 - Add the navigation bar component.
+- Add npm package `@vue-icons/feather`.
 
 ### Changed
 - update the style of `App.vue`.
